@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu hỏi phân tích thiết kế thuật toán</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="main-menu">
+        <h1>Chọn một mục</h1>
+        <div class="menu-buttons">
+          <button onclick="showSection('practice')">Luyện tập</button>
+          <button onclick="showSection('advanced')">Nâng cao</button>
+          <button onclick="showSection('test')">Thi thử</button>
+        </div>
+      </section>
+
+      <section id="practice" class="hidden">
+        <h2>Luyện tập</h2>
+        <ul>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/uihvoz')">
+              Bài 1
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/chfu30')">
+              Bài 2
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/9vsbgu')">
+              Bài 3
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/mdz5e8')">
+              Bài 4
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/fny2lm')">
+              Bài 5
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/llb7wm')">
+              Bài 6
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/rykguq')">
+              Bài 7
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/gkwlwr')">
+              Bài 8
+            </button>
+          </li>
+          <li>
+            <button onclick="openLink('https://azota.vn/de-thi/crlnnn')">
+              Bài 9
+            </button>
+          </li>
+        </ul>
+        <button class="back" onclick="showMenu()">Quay lại Menu chính</button>
+      </section>
+
+      <section id="advanced" class="hidden">
+        <h2>Luyện tập nâng cao</h2>
+        <button onclick="openLink('https://azota.vn/de-thi/ljqumw')">
+          Full Đáp Án (270 câu)
+        </button>
+        <button class="back" onclick="showMenu()">Quay lại Menu chính</button>
+      </section>
+
+      <section id="test" class="hidden">
+        <h2>Thi thử</h2>
+        <button onclick="openLink('https://azota.vn/de-thi/qt6llf')">
+          Random 50 câu
+        </button>
+        <button class="back" onclick="showMenu()">Quay lại Menu chính</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
